@@ -6,7 +6,7 @@ RUN mkdir -p plugins \
 && npm install --production --silent && mv node_modules ../
 
 COPY smartthings-nodeproxy/avail_plugins/envisalink.js ./plugins
-COPY smartthings-nodeproxy/config.json.sample config.json
+COPY smartthings-nodeproxy/config.json config.json
 
 EXPOSE 8080
 
